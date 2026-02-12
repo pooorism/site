@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>پنل مدیریت برساد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" id="loginBox">
+      <h1>ورود مدیر</h1>
+      <input id="user" class="input" placeholder="نام کاربری">
+      <input id="pass" class="input" type="password" placeholder="رمز عبور">
+      <button id="loginBtn" class="btn">ورود</button>
+      <p id="loginMsg" class="msg"></p>
+    </section>
+
+    <section class="card hidden" id="panelBox">
+      <div class="head">
+        <h2>مدیریت محصولات</h2>
+        <button id="logoutBtn" class="btn btn-light">خروج</button>
+      </div>
+      <form id="productForm" class="grid2">
+        <input id="pid" class="input" placeholder="id (اختیاری)">
+        <input id="pname" class="input" placeholder="نام محصول" required>
+        <input id="pbrand" class="input" placeholder="برند" required>
+        <input id="psku" class="input" placeholder="sku" required>
+        <input id="pprice" class="input" type="number" placeholder="قیمت">
+        <input id="pimage" class="input" placeholder="مسیر عکس مثل assets/product-placeholder.svg">
+        <textarea id="pdesc" class="input" placeholder="توضیح"></textarea>
+        <button class="btn" type="submit">ذخیره محصول</button>
+      </form>
+
+      <h3>تنظیم پس‌زمینه کاتالوگ</h3>
+      <div class="grid2">
+        <input id="catalogBg" class="input" placeholder="مسیر تصویر پس‌زمینه">
+        <input id="catalogVector" class="input" placeholder="مسیر وکتور">
+        <button id="saveBg" class="btn" type="button">ذخیره پس‌زمینه</button>
+      </div>
+
+      <div id="list" class="list"></div>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
