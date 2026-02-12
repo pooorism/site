@@ -1,0 +1,8 @@
+{
+  "theme_default": "dark",
+  "hero_bg": "assets/hero.svg",
+  "site_bg": "assets/bg1.svg",
+  "catalog_bg": "assets/bg2.svg",
+  "catalog_vector": "assets/perfume-vector.svg",
+  "logo": "assets/logo.svg"
+}

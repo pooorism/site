@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>برساد | Bersad</title>
+  <meta name="description" content="کالکشن عطرهای لوکس برساد" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-layer" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <button class="icon-btn header__menuBtn" id="menuBtn" aria-label="منو">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <a class="brand" href="/" data-route aria-label="برساد">
+        <img id="logoImg" class="brand__logo" alt="Bersad" loading="lazy" />
+      </a>
+      <div class="header__actions">
+        <a class="btn btn--gold btn--sm" href="/catalog" data-route>کاتالوگ</a>
+        <button class="btn btn--ghost btn--sm" id="themeBtn" type="button">روشن/تاریک</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden-mobile" id="nav">
+      <div class="container nav__inner">
+        <a href="/" data-route class="nav__link">خانه</a>
+        <a href="/catalog" data-route class="nav__link">کاتالوگ محصولات</a>
+        <a href="/about" data-route class="nav__link">درباره ما</a>
+        <a href="/contact" data-route class="nav__link">تماس با ما</a>
+        <a href="admin/" class="nav__link nav__link--muted">ورود مدیر</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section id="heroSection" class="hero route-section" data-route-section="/">
+      <div class="container hero__grid">
+        <div class="hero__card">
+          <div class="pill">کالکشن انحصاری</div>
+          <h1 class="hero__title"><span class="latin">bersad</span> | <span>برساد</span></h1>
+          <p class="hero__subtitle">کالکشن عطرهای مطرح</p>
+          <p class="hero__desc">سفارش تلفنی و واتساپ | ارسال داخل ایران</p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" target="_blank" rel="noopener" href="https://wa.me/989122135489">سفارش در واتساپ</a>
+            <a class="btn btn--purple" href="tel:09124105546">تماس فوری</a>
+          </div>
+          <div class="hero__points">
+            <span>عطرهای اورجینال</span>
+            <span>ارسال سریع</span>
+            <span>تضمین اصالت</span>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="hero__frame"><img id="heroImg" alt="Bersad" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogSection" class="section route-section" data-route-section="/catalog">
+      <div class="container section__head">
+        <h2 class="section__title">کاتالوگ محصولات</h2>
+        <p class="section__hint">برای مشاهده جزئیات روی محصول کلیک کنید.</p>
+      </div>
+      <div class="container catalog">
+        <div class="toolbar">
+          <input id="q" class="input" placeholder="جستجو نام/برند/کد محصول" />
+          <select id="brand" class="input"><option value="">همه برندها</option></select>
+        </div>
+        <div id="grid" class="grid"></div>
+        <div id="empty" class="empty hidden">محصولی پیدا نشد.</div>
+      </div>
+    </section>
+
+    <section id="productSection" class="section route-section" data-route-section="/product">
+      <div class="container">
+        <article class="product-view" id="productView"></article>
+      </div>
+    </section>
+
+    <section id="aboutSection" class="section section--soft route-section" data-route-section="/about">
+      <div class="container about">
+        <h2 class="section__title">درباره ما</h2>
+        <div class="about__card">
+          <p>برساد یک برند تخصصی در عرضه کالکشن عطرهای لوکس است. تمرکز ما روی اصالت کالا، کیفیت تجربه خرید و ارائه مشاوره دقیق برای انتخاب رایحه مناسب است.</p>
+          <p>ما با ساختاری منسجم در فروش و توزیع، تلاش می‌کنیم تجربه‌ای مینیمال، حرفه‌ای و قابل اعتماد برای مشتریان فراهم کنیم.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactSection" class="section route-section" data-route-section="/contact">
+      <div class="container contact">
+        <div class="contact__card">
+          <h2 class="section__title">تماس با ما</h2>
+          <div class="contact__rows">
+            <a class="contact__row" href="tel:09124105546"><span>تماس</span><strong>۰۹۱۲۴۱۰۵۵۴۶</strong></a>
+            <a class="contact__row" target="_blank" rel="noopener" href="https://wa.me/989122135489"><span>واتساپ</span><strong>۰۹۱۲۲۱۳۵۴۸۹</strong></a>
+            <div class="contact__row"><span>ساعت کاری</span><strong>شنبه تا پنج‌شنبه: ۹ صبح تا ۹ شب</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img id="footerLogo" class="footer__logo" alt="Bersad" loading="lazy" />
+        <div class="footer__desc">کالکشن عطرهای مطرح جهان<br/>ارسال به سراسر ایران</div>
+      </div>
+      <div class="footer__links">
+        <a href="/" data-route>صفحه اصلی</a>
+        <a href="/catalog" data-route>کاتالوگ محصولات</a>
+        <a href="/about" data-route>درباره ما</a>
+        <a href="/contact" data-route>تماس با ما</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
